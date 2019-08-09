@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 // instancia body parser para suportar json
-const bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
 app.use(bodyParser.json());       
 app.use(bodyParser.urlencoded({   
   extended: true
@@ -29,12 +29,12 @@ app.post('/cadastrados', function(request, response) {
       database : process.env.MYSQL_DB  
   });
   connection.connect();
-  
+}  
   // instancia intent
   var intentName = request.body.queryResult.intent.displayName;
   
   if (intentName == 'cadastro') {
-    console.log('cadastrar')  
+    console.log('cadastrar');  
     
     var nome_ = request.body.queryResult.parameters.nome;
     var email_   = request.body.queryResult.parameters.email;
@@ -54,4 +54,4 @@ app.post('/cadastrados', function(request, response) {
 // listen for requests :)
 const listener = app.listen(process.env.PORT, function() {
   console.log('Your app is listening on port ' + listener.address().port);
-})
+});
