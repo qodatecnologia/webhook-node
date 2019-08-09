@@ -29,7 +29,7 @@ app.post('/cadastrados', function(request, response) {
       database : process.env.MYSQL_DB  
   });
   connection.connect();
-};  
+});  
   // instancia intent
   var intentName = request.body.queryResult.intent.displayName;
   
