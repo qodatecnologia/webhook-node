@@ -1,0 +1,7 @@
+{
+  "name": "Node webhook",
+  "description": "Das Intents ao RemoteSql...",
+  "repository": "https://github.com/qodatecnologia/webhook-node",
+  "logo": "https://avatars3.githubusercontent.com/u/39283833?s=460&v=4",
+  "keywords": ["node", "express"]
+}

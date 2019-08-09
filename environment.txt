@@ -1,0 +1,8 @@
+# reference these in your code with process.env.
+
+MYSQL_HOST=remotemysql.com
+MYSQL_USER=efFsS2DIOa
+MYSQL_PASS=BCIEpnsQve
+MYSQL_DB=efFsS2DIOa
+
+# note: .env is a shell file so there can't be spaces around =
