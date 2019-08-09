@@ -23,7 +23,7 @@
   "license": "MIT",
   "keywords": [
     "node",
-    "glitch",
+    "heroku",
     "express"
   ]
 }
