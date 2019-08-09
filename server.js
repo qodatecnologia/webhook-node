@@ -44,7 +44,7 @@ app.post('/cadastrados', function(request, response) {
     connection.query(query, function (error, results, fields) {
        if (error) throw error;
        connection.end();
-       response.json({"fulfillmentText" :"Ok, cadastro realizado" })
+       response.json({"fulfillmentText" :"Ok, cadastro realizado" });
     }); 
   
     
