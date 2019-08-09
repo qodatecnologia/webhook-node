@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-var http = require('http');
+var request = require('http');
 
 // instancia body parser para suportar json
 const bodyParser = require('body-parser');
