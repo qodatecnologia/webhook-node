@@ -43,10 +43,10 @@ app.post('/cadastrados', function(request, response) {
   if (intentName == 'cadastro') {
     console.log('cadastrar')  
     
-    var nome = request.body.queryResult.parameters.['nome'];
-    var email   = request.body.queryResult.parameters.['email'];
+    var nome_ = request.body.queryResult.parameters.nome;
+    var email_   = request.body.queryResult.parameters.email;
     
-    var query = 'insert into cadastrados values ("'+nome+'","'+email+'")';
+    var query = 'insert into cadastrados values ("'+nome_+'","'+email_+'")';
     
     connection.query(query, function (error, results, fields) {
        if (error) throw error;
